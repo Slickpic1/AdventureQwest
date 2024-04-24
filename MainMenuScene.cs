@@ -12,14 +12,14 @@ public class MainMenuScene : MenuScene
 {
     //Audio
     private Song mainMenuMusic;
-     public MainMenuScene(ContentManager contentManager, GraphicsDeviceManager graphics, SceneManager sceneManager) : base(contentManager, graphics, sceneManager)
+    public MainMenuScene(ContentManager contentManager, GraphicsDeviceManager graphics, SceneManager sceneManager) : base(contentManager, graphics, sceneManager)
     {
         //Initialize our menu sizeing and position (need to better adjust)
         titlePosition = new Vector2(graphics.PreferredBackBufferWidth/3 - 25,graphics.PreferredBackBufferHeight/5);
         optionsPosition = new Vector2(graphics.PreferredBackBufferWidth/3 + 50,graphics.PreferredBackBufferHeight/3);
         optionColor = Color.Black;
     }
-     public override void Load()
+    public override void Load()
     {
         //Load our content specifically for the main menu
         backroundTexture = contentManager.Load<Texture2D>("Menus/MainMenuBackground");
@@ -58,7 +58,7 @@ public class MainMenuScene : MenuScene
     //{ 
     //    base.LoadCursor();
     //}
-     public override void Update(GameTime gameTime)
+    public override void Update(GameTime gameTime)
     {
         currentKBState = Keyboard.GetState();
         //Check to see if keyPressed is enter (might abstract later)
@@ -87,7 +87,7 @@ public class MainMenuScene : MenuScene
         }
         base.Update(gameTime);
     }
-     public override void Draw(SpriteBatch spriteBatch)
+    public override void Draw(SpriteBatch spriteBatch)
     {
         base.Draw(spriteBatch);
     }

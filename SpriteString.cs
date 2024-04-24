@@ -36,7 +36,7 @@ public class SpriteString
 
     public void Update(GameTime gameTime)
     {
-
+        
     }
 
     public void DrawString(SpriteBatch spriteBatch)

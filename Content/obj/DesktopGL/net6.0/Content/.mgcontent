@@ -4,14 +4,14 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>c:/Users/slick/GameStuff/Projects/Sandbox1/Content/Audio/Music/mainMenuMusic.mp3</File>
-    <File>c:/Users/slick/GameStuff/Projects/Sandbox1/Content/Audio/SFX/blipSelect.wav</File>
-    <File>c:/Users/slick/GameStuff/Projects/Sandbox1/Content/Fonts/ancientModern64.spritefont</File>
-    <File>c:/Users/slick/GameStuff/Projects/Sandbox1/Content/Fonts/goblinAppears12.spritefont</File>
-    <File>c:/Users/slick/GameStuff/Projects/Sandbox1/Content/Fonts/goblinAppears24.spritefont</File>
-    <File>c:/Users/slick/GameStuff/Projects/Sandbox1/Content/Menus/MainMenuBackground.png</File>
-    <File>c:/Users/slick/GameStuff/Projects/Sandbox1/Content/Menus/selectorSword.png</File>
-    <File>c:/Users/slick/GameStuff/Projects/Sandbox1/Content/Menus/subMainMenu.png</File>
+    <File>C:/Users/slick/GameStuff/Projects/AdventureQwest/Content/Audio/Music/mainMenuMusic.mp3</File>
+    <File>C:/Users/slick/GameStuff/Projects/AdventureQwest/Content/Audio/SFX/blipSelect.wav</File>
+    <File>C:/Users/slick/GameStuff/Projects/AdventureQwest/Content/Fonts/ancientModern64.spritefont</File>
+    <File>C:/Users/slick/GameStuff/Projects/AdventureQwest/Content/Fonts/goblinAppears12.spritefont</File>
+    <File>C:/Users/slick/GameStuff/Projects/AdventureQwest/Content/Fonts/goblinAppears24.spritefont</File>
+    <File>C:/Users/slick/GameStuff/Projects/AdventureQwest/Content/Menus/MainMenuBackground.png</File>
+    <File>C:/Users/slick/GameStuff/Projects/AdventureQwest/Content/Menus/selectorSword.png</File>
+    <File>C:/Users/slick/GameStuff/Projects/AdventureQwest/Content/Menus/subMainMenu.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

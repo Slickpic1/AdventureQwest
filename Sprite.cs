@@ -7,7 +7,7 @@ namespace AdventureQwest;
 
 public class Sprite
 {
-    private static readonly float SCALE = 2f;
+    private readonly float SCALE;
     public Texture2D texture;
     public Vector2 position;
     public Rectangle Rect
@@ -22,19 +22,15 @@ public class Sprite
           );  
         }
     }
-     public Sprite(Texture2D texture)
+    public Sprite(Texture2D texture, Vector2 position, float SCALE)
     {
-        
+      this.texture = texture;
+      this.position = position;
+      this.SCALE = SCALE;
     }
-     public Sprite(Texture2D texture, Vector2 position)
-    {
-        this.texture = texture;
-        this.position = position;
-    }
-     public virtual void Update(GameTime gameTime)
-    {
-     }
-     public virtual void Draw(SpriteBatch spriteBatch)
+
+    public virtual void Update(GameTime gameTime){}
+    public virtual void Draw(SpriteBatch spriteBatch)
     {
         spriteBatch.Draw(texture, Rect, Color.White);
     }

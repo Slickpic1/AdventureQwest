@@ -12,10 +12,11 @@ public class MenuCursor : Sprite
     private List<Vector2> positions;
     private int maxPosition;
     private int currentRowPos;
+    private int currentColPos;
     private SoundEffect cursorMoveSound;
 
 
-    public MenuCursor(Texture2D texture, Vector2 position, List<Vector2> positions) : base(texture, position)
+    public MenuCursor(Texture2D texture, Vector2 position,float SCALE, List<Vector2> positions) : base(texture, position, SCALE)
     {
         this.positions = positions;
         //this.offSet = offSet;
@@ -26,6 +27,7 @@ public class MenuCursor : Sprite
         //Set max number of positions equal to length of positions list
         maxPosition = positions.Count;
         currentRowPos = 1;  //or set to zero?
+        currentColPos = 1;
     }
 
     public void Load(ContentManager contentManager)
@@ -50,7 +52,6 @@ public class MenuCursor : Sprite
         {
             case "down":
                 currentRowPos++;
-                Debug.WriteLine("cursorRowPos: " + currentRowPos);
                 if (currentRowPos <= maxPosition)
                 {
                     position = positions[currentRowPos-1];
@@ -60,11 +61,11 @@ public class MenuCursor : Sprite
                 {
                     currentRowPos--;
                 }
+                Debug.WriteLine("cursorRowPos: " + currentRowPos);
                 break;
 
             case "up":
                 currentRowPos--;
-                Debug.WriteLine("cursorRowPos: " + currentRowPos);
 
                 if (currentRowPos > 0)
                 {
@@ -75,6 +76,35 @@ public class MenuCursor : Sprite
                 {
                     currentRowPos++;
                 }
+                Debug.WriteLine("cursorRowPos: " + currentRowPos);
+                break;
+
+            case "right":
+                currentColPos++;
+                //if (currentColPos <= maxPosition.X)
+                //{
+                //    //Move pos to the right
+                //    cursorMoveSound.Play();
+                //}
+                //else
+                //{
+                //    currentColPos--;
+                //}
+                Debug.WriteLine("cursorColPos: " + currentColPos);
+                break;
+
+            case "left":
+                currentColPos++;
+                //if (currentColPos > 0)
+                //{
+                //    //Move pos to the left
+                //    cursorMoveSound.Play();
+                //}
+                //else
+                //{
+                //    currentColPos++;
+                //}
+                Debug.WriteLine("cursorColPos: " + currentColPos);
                 break;
         }
     }
@@ -82,5 +112,10 @@ public class MenuCursor : Sprite
     public int GetCurrentRowPos()
     {
         return currentRowPos;
+    }
+
+    public int GetCurrentColPos()
+    {
+        return currentColPos;
     }
 }

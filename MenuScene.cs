@@ -61,7 +61,7 @@ public class MenuScene : IScene
             }
 
             //Load our cursor at initial position
-            menuCursor = new MenuCursor(contentManager.Load<Texture2D>("Menus/selectorSword"),Vector2.Zero,cursorPositions);
+            menuCursor = new MenuCursor(contentManager.Load<Texture2D>("Menus/selectorSword"),Vector2.Zero,2f,cursorPositions);
             menuCursor.Load(contentManager);
     }
 
